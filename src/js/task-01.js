@@ -1,23 +1,8 @@
+const categoriesTotalEl = document.querySelectorAll(".item");
+console.log(`В списке ${categoriesTotalEl.length} категории.`) 
 
-const navListLink = document.querySelector('.item');
-console.log(navListLink);
+   categoriesTotalEl.forEach((element) => {
 
-
-
-const firstEl = navListLink.firstElementChild.textContent.forEach;
-console.log(firstEl);
-
-
-
-// const itemLength = navListLink.length;
-// console.log(itemLength);
-
-// console.log("У списку ${itemLength} категорії");
-
-
-// const textEl = navListLink.textContent;
-// console.log(textEl);
-
-
-
-// console.log('Категорія:', navListLink.textContent, 'Кількість елементів:',  );
+    console.log(`Категория: ${element.firstElementChild.textContent}`);
+    console.log(`Количество элементов:${element.querySelectorAll('li').length }`)
+});
