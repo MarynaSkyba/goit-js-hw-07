@@ -33,7 +33,6 @@ const imageEl = document.querySelector('#gallery');
 
 const picEl = images.map(image => {
   const itemEl = document.createElement('li');
-
   itemEl.insertAdjacentHTML('afterbegin', `<img src = '${image.url}' alt = '${image.alt}' />`);
   return itemEl;
 });
